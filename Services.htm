@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAAM GYM</title>
+    <link rel="icon" type="x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="about.css">
+    <script src="https://kit.fontawesome.com/c6fbd8ef39.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div style="padding: 10px 0; padding-left: 10px; font-size: 20px; background-color: #101492;">
+        <i class="fa-solid fa-bars" onclick="navbar()" style="color: #FFF;" id="icon"></i>
+    </div>
+    <div class="navbar" id="navbar">
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fa-solid fa-house" style="color: #101492;"></i> Home</a></li>
+                <li><a href="membership.html"><i class="fa-solid fa-address-card" style="color: #101492;"></i>
+                        Memberships</a></li>
+                <li><a href="personalt.html"><i class="fa-solid fa-dumbbell" style="color: #101492;"></i> Personal
+                        Training</a></li>
+                <li><a href="about.html"><i class="fa-solid fa-users" style="color: #101492;"></i> About Us</a></li>
+                <li><a href="contact.html"><i class="fa-solid fa-phone" style="color: #101492;"></i> Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="main">
+        <main>
+            <div class="main-1">
+               <img src="dumbbells.jpg" height="100%" width="100%" class="about_bg">
+                <div class="main-2">
+                    <h1>SAAM GYM EXPENSES FORM</h1>
+  
+  <div class="container mt-4">
+    <table>
+      <thead>
+        <tr>
+          <th>Item</th>
+          <th>Quantity</th>
+          <th>Price</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1. GYM Membership (Monthly)</td>
+          <td><input type="number" value="0" class="qty" id="qty_gym" onchange="calculatePrice('gym')"/></td>
+          <td><input type="number" readonly value="0" id="price_gym"/></td>
+        </tr>
+        <tr>
+          <td>2. Personal trainers (Monthly) </td>
+          <td><input type="number" value="0" class="qty" id="qty_trainers" onchange="calculatePrice('trainers')"/></td>
+          <td><input type="number" readonly value="0" id="price_trainers"/></td>
+        </tr>
+        <tr>
+          <td>3. Annual Equipment fee</td>
+          <td><input type="number" value="0" class="qty" id="qty_equipment" onchange="calculatePrice('equipment')"/></td>
+          <td><input type="number" readonly value="0" id="price_equipment"/></td>
+        </tr>
+        <tr>
+          <td class="total">Total Expenses In SAAM GYM </td>
+          <td></td>
+          <td class="total-val"><span id="total_value">0</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <script src="services_script.js"></script>
+
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+<footer>
+    <div class="footer-text">This Website was made by Samir Figueroa. Samir.figueroa@stu.bcc.cuny.edu
+    </div>
+</footer>
+
+</html>
